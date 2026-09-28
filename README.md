@@ -14,34 +14,6 @@ The analysis pipeline characterizes top hit compounds from **ZINC15**, **Enamine
 
 The scripts are organized into modular, workflow-based directories:
 
-```text
-SPPL2a-Virtual-Screening/
-├── 01_stability_metrics/
-│   ├── analyze_rmsd.sh
-│   ├── analyze_rmsf.sh
-│   ├── analyze_sasa_rg.sh
-│   ├── plot_rmsd.py
-│   └── plot_metrics.py
-├── 02_pca_fel/
-│   ├── analyze_pca_combined.sh
-│   └── plot_pca_combined.py
-├── 03_mmpbsa/
-│   ├── prepare_mmpbsa_trajectories.sh
-│   ├── get_mmpbsa_table.py
-│   └── get_decomp_top.py
-├── 04_interactions/
-│   ├── analyze_hbonds.py
-│   ├── hbond_occupancy_analysis.py
-│   ├── extract_all_interactions.py
-│   └── generate_bipartite_circos.py
-└── 05_dft/
-    ├── run_all.sh
-    ├── cub_generate.sh
-    └── extract_data.py
-```
-
----
-
 ### `01_stability_metrics/`
 Calculations and multi-panel plotting for global structural stability and equilibration of protein–ligand complexes.
 * `analyze_rmsd.sh`: GROMACS batch script computing protein backbone and ligand root-mean-square deviation (RMSD).
@@ -96,3 +68,8 @@ Quantum chemical calculations and electronic property profiling using Gaussian 1
   * `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`
   * `MDAnalysis`, `mdtraj`, `rdkit`
   * `pyCircos` (for bipartite chord network plotting)
+
+---
+## Data Availability
+
+The reduced trajectories and structure files required to run these scripts are available on Zenodo: '10.5281/zenodo.23011361'
