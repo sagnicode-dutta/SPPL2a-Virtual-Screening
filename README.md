@@ -1,4 +1,4 @@
-# SPPL2a Virtual Screening & Lead Analysis Pipeline
+# SPPL2a Virtual Screening Pipeline
 
 This repository contains the full molecular dynamics (MD), binding energetics, interaction mapping, and quantum chemical (DFT) analysis scripts for the virtual screening and lead characterization study targeting human **SPPL2a** (Signal Peptide Peptidase-Like 2a).
 
@@ -69,7 +69,9 @@ Quantum chemical calculations and electronic property profiling using Gaussian 1
   * `MDAnalysis`, `mdtraj`, `rdkit`
   * `pyCircos` (for bipartite chord network plotting)
 
----
+
 ## Data Availability
 
-The reduced trajectories and structure files required to run these scripts are available on Zenodo: '10.5281/zenodo.23011361'
+The reduced trajectories and structure files required to run these scripts are available on Zenodo: `10.5281/zenodo.23011361`
+
+---
